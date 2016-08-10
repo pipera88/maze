@@ -1,0 +1,38 @@
+{% extends "dudeisbob/index.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<style type='text/css'>
+
+.maze {
+  font-family: "Lucida Console", Monaco, monospace;
+  background-color: #eeeeee;
+  font-size: 14px;
+  width: 40%;
+  height: 40%;
+  padding: 15px;
+  margin: 0 auto;
+  white-space: pre;
+  text-align: center;
+}
+
+.character {
+  color: red;
+}
+
+</style>
+
+<h3>r/dailyprogrammer</h3>
+
+<div>
+
+  <div class='maze'>
+
+  </div>
+
+</div>
+
+{% endblock content %}
+{% block scripts %}
+<script src="{% static 'dudeisbob/daily_w25.js' %}"></script>
+{% endblock scripts %}
